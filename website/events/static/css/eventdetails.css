@@ -49,6 +49,10 @@ body{
   margin-bottom: 3rem;
 }
 
+.pad-top{
+  margin-top: 6rem !important;
+}
+
 .about-event{
   font-size: 1.8rem !important;
   font-weight: 100 !important;
@@ -262,6 +266,16 @@ img{
   font-family: 'Prompt', sans-serif;
   color:black;
   text-transform: initial;
+}
+
+@media (max-width: 500px){
+  .poster_img .eve_img_desc .eve_descrip h1{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Prompt', sans-serif;
+    color:black;
+    text-transform: initial;
+  }
 }
 
 .title-header{
@@ -531,6 +545,7 @@ img{
   bottom: 0;
   width: 600px !important;
   height: 600px !important;
+  object-fit: fill;
 }
 
 @media screen and (max-width:1000px){
@@ -594,6 +609,7 @@ img{
   bottom: 0;
   width: 600px !important;
   height: 600px !important;
+  object-fit: fill;
 }
 
 @media screen and (max-width:1700px){
@@ -774,6 +790,7 @@ img{
   bottom: 0;
   width: 400px !important;
   height: 400px !important;
+  object-fit: fill;
 }
 
 @media screen and (max-width:1630px){
@@ -849,8 +866,8 @@ img{
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
-    width: 300px !important;
-    height: 300px !important;
+    width: 325px !important;
+    height: 325px !important;
   }
 }
 
@@ -862,12 +879,12 @@ img{
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
-    width: 270px !important;
-    height: 270px !important;
+    width: 300px !important;
+    height: 300px !important;
   }
 }
 
-@media screen and (max-width:860px){
+@media screen and (max-width:850px){
   .main .container .swiper-container .swiper-wrapper .swiper-slide .card-image .five-image {
     display: block;
     position: relative;
@@ -888,8 +905,8 @@ img{
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
-    width: 210px !important;
-    height: 210px !important;
+    width: 230px !important;
+    height: 230px !important;
   }
 }
 
@@ -985,23 +1002,27 @@ img{
 }
 
 .swiper-button-next{
-  color: white !important;
-  background-color: var(--theme-color);
+  color: black !important;
   width: 80px !important;
   height: 80px !important;
-  border-radius: 50% !important;
   font-weight: 900;
   text-indent: 5px;
 }
 
 .swiper-button-prev{
-  color: white !important;
-  background-color: var(--theme-color);
+  color: black !important;
   width: 80px !important;
   height: 80px !important;
-  border-radius: 50% !important;
   font-weight: 900;
   text-indent: -5px;
+}
+
+.swiper-button-next:hover{
+  color: var(--theme-color) !important;
+}
+
+.swiper-button-prev:hover{
+  color: var(--theme-color) !important;
 }
 
 @media screen and (max-width:1300px){
@@ -1529,6 +1550,19 @@ timeline{
     margin-top: 10vh;
   }
 }
+
+@media (min-width: 530px){
+  .section-header{
+    margin-top: -3rem;
+  }
+}
+
+@media (min-width: 200px){
+  .section-header{
+    margin-top: -1.3rem;
+  }
+}
+
 @media (min-width: 500px) 
 {
   .swiper-container{
@@ -1548,7 +1582,10 @@ timeline{
   
     /* margin-left: 7.5% !important; */
   }
-  
+
+  .card-image{
+    transform: scale(1.25) translateX(-22px);
+  }
 }
 @media screen and (max-width: 1730px) and (min-width: 1630px)
 {
